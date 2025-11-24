@@ -3,142 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flatty - Modern landing page builder for creating beautiful and responsive web pages">
     <title>Flatty - Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero">
-        <nav class="navbar">
-            <div class="logo">FLATTY</div>
-            <div class="nav-link">Already a member?</div>
+    <header class="hero">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo" aria-label="Flatty Logo">FLATTY</div>
+            <a href="#" class="nav-link">Already a member?</a>
         </nav>
         
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Make your landing page look really good.</h1>
-                <div class="email-form">
-                    <input type="email" placeholder="Enter your email address" class="email-input">
-                    <button class="invite-btn">Invite Me!</button>
-                </div>
+                <form class="email-form" aria-label="Newsletter signup">
+                    <input type="email" placeholder="Enter your email address" class="email-input" required aria-label="Email address">
+                    <button type="submit" class="invite-btn">Invite Me!</button>
+                </form>
             </div>
             <div class="hero-image">
-                <img src="assests/hero_section.png" alt="Illustration of hands holding a smartphone" class="hero-img">
+                <img src="src/assets/hero_section.png" alt="Illustration of hands holding a smartphone showing app interface" class="hero-img" loading="eager">
             </div>
         </div>
-    </section>
+    </header>
 
     <!-- Features Section -->
-    <section class="features">
-        <h2>Your Landing Page<br>Looks Wonderful Now.</h2>
-        <p class="section-description">It is a long established fact that a reader will be<br>distracted by the readable content of a page when<br>looking at its layout.</p>
+    <section class="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">Your Landing Page Looks Wonderful Now.</h2>
+        <p class="section-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         
         <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="assests/chrome.png" alt="Chrome browser icon" class="feature-img">
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">
+                    <img src="src/assets/chrome.png" alt="" class="feature-img" loading="lazy">
                 </div>
                 <h3>1 - Browser Compatibility</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="assests/mail.png" alt="Mail icon" class="feature-img">
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">
+                    <img src="src/assets/mail.png" alt="" class="feature-img" loading="lazy">
                 </div>
                 <h3>2 - Email Campaigns</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <img src="assests/notes.png" alt="Notes icon" class="feature-img">
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">
+                    <img src="src/assets/notes.png" alt="" class="feature-img" loading="lazy">
                 </div>
                 <h3>3 - Gather Your Notes</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-            </div>
+            </article>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
-        <div class="email-form-section">
-            <input type="email" placeholder="Enter your email address" class="email-input">
-            <button class="invite-btn">Invite Me!</button>
-        </div>
+    <section class="about" aria-labelledby="about-heading">
+        <form class="email-form-section" aria-label="Newsletter signup">
+            <input type="email" placeholder="Enter your email address" class="email-input" required aria-label="Email address">
+            <button type="submit" class="invite-btn">Invite Me!</button>
+        </form>
         
-        <h2>Flatty is for Everyone.</h2>
-        <p class="section-description">It is a long established fact that a reader will be<br>distracted by the readable content of a page when<br>looking at its layout.</p>
+        <h2 id="about-heading">Flatty is for Everyone.</h2>
+        <p class="section-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         
         <div class="phone-screen">
-            <img src="assests/mobile.png" alt="Mobile app preview" class="about-mobile-img">
+            <img src="src/assets/mobile.png" alt="Mobile app interface preview showing main features" class="about-mobile-img" loading="lazy">
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team">
-        <div class="email-form-section">
-            <input type="email" placeholder="Enter your email address" class="email-input">
-            <button class="invite-btn">Invite Me!</button>
-        </div>
+    <section class="team" aria-labelledby="team-heading">
+        <form class="email-form-section" aria-label="Newsletter signup">
+            <input type="email" placeholder="Enter your email address" class="email-input" required aria-label="Email address">
+            <button type="submit" class="invite-btn">Invite Me!</button>
+        </form>
         
-        <h2>Our Awesome Team.<br>Design Lovers.</h2>
-        <p class="section-description">It is a long established fact that a reader will be<br>distracted by the readable content of a page when<br>looking at its layout.</p>
+        <h2 id="team-heading">Our Awesome Team. Design Lovers.</h2>
+        <p class="section-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         
         <div class="team-grid">
-            <div class="team-member">
+            <article class="team-member">
                 <div class="member-photo">
-                    <img src="assests/Michael.png" alt="Michael Robson" class="member-img">
+                    <img src="src/assets/Michael.png" alt="Portrait of Michael Robson" class="member-img" loading="lazy">
                 </div>
                 <h3>Michael Robson</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-                <div class="social-icons">
-                    <span class="icon-send"></span>
-                    <span class="icon-phone"></span>
-                    <span class="icon-web"></span>
+                <div class="social-icons" role="list" aria-label="Social media links">
+                    <a href="#" class="social-icon icon-send" aria-label="Send message to Michael Robson"></a>
+                    <a href="#" class="social-icon icon-phone" aria-label="Call Michael Robson"></a>
+                    <a href="#" class="social-icon icon-web" aria-label="Visit Michael Robson's website"></a>
                 </div>
-            </div>
-            <div class="team-member">
+            </article>
+            <article class="team-member">
                 <div class="member-photo">
-                    <img src="assests/Pete.png" alt="Pete Ford" class="member-img">
+                    <img src="src/assets/Pete.png" alt="Portrait of Pete Ford" class="member-img" loading="lazy">
                 </div>
                 <h3>Pete Ford</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-                <div class="social-icons">
-                    <span class="icon-send"></span>
-                    <span class="icon-phone"></span>
-                    <span class="icon-web"></span>
+                <div class="social-icons" role="list" aria-label="Social media links">
+                    <a href="#" class="social-icon icon-send" aria-label="Send message to Pete Ford"></a>
+                    <a href="#" class="social-icon icon-phone" aria-label="Call Pete Ford"></a>
+                    <a href="#" class="social-icon icon-web" aria-label="Visit Pete Ford's website"></a>
                 </div>
-            </div>
-            <div class="team-member">
+            </article>
+            <article class="team-member">
                 <div class="member-photo">
-                    <img src="assests/Angelica.png" alt="Angelica Finning" class="member-img">
+                    <img src="src/assets/Angelica.png" alt="Portrait of Angelica Finning" class="member-img" loading="lazy">
                 </div>
                 <h3>Angelica Finning</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-                <div class="social-icons">
-                    <span class="icon-send"></span>
-                    <span class="icon-phone"></span>
-                    <span class="icon-web"></span>
+                <div class="social-icons" role="list" aria-label="Social media links">
+                    <a href="#" class="social-icon icon-send" aria-label="Send message to Angelica Finning"></a>
+                    <a href="#" class="social-icon icon-phone" aria-label="Call Angelica Finning"></a>
+                    <a href="#" class="social-icon icon-web" aria-label="Visit Angelica Finning's website"></a>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
     <!-- Footer / Contact Section -->
-    <section class="footer">
-        <div class="email-form-section">
-            <input type="email" placeholder="Enter your email address" class="email-input">
-            <button class="invite-btn">Invite Me!</button>
-        </div>
+    <footer class="footer" aria-labelledby="contact-heading">
+        <form class="email-form-section" aria-label="Newsletter signup">
+            <input type="email" placeholder="Enter your email address" class="email-input" required aria-label="Email address">
+            <button type="submit" class="invite-btn">Invite Me!</button>
+        </form>
         
-        <h2>Contact Us</h2>
+        <h2 id="contact-heading">Contact Us</h2>
 
-        <form class="contact-form">
-            <input type="text" class="contact-input" placeholder="Your Name">
-            <input type="email" class="contact-input" placeholder="Your Email">
-            <input type="text" class="contact-input" placeholder="Subject">
-            <textarea class="contact-textarea" placeholder="Your Message"></textarea>
+        <form class="contact-form" aria-label="Contact form">
+            <input type="text" class="contact-input" placeholder="Your Name" required aria-label="Your name">
+            <input type="email" class="contact-input" placeholder="Your Email" required aria-label="Your email">
+            <input type="text" class="contact-input" placeholder="Subject" required aria-label="Subject">
+            <textarea class="contact-textarea" placeholder="Your Message" required aria-label="Your message"></textarea>
             <button type="submit" class="send-btn">Send Message</button>
         </form>
-    </section>
+    </footer>
 </body>
 </html>
